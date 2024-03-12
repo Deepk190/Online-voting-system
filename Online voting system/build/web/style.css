@@ -1,0 +1,250 @@
+.navbar{
+    background: transparent;
+    height: 80px;
+  
+}
+
+.navbar-brand {
+      color: #fff;
+      font-weight: 900;
+      font-style:normal;
+      
+}  
+  
+
+
+.nav-link {
+    font-weight: 900;
+    color: #fff;
+    font-size: 40px;
+    position: relative;
+       
+    
+}
+.nav-link:hover,.nav-link.active{
+    color:#fff;
+
+}
+@media (min-width:991px){
+
+
+
+    .nav-link::before {
+
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-59%);
+        width: 100%;
+        height: 2px;
+        background-color: #00b383;
+        visibility: hidden;
+        transition: 0.3s ease-in-out;
+
+    }
+    .nav-link:hover::before, .nav-link.active::before
+    {
+        width: 100%;
+        visibility: visible;
+    }
+}
+.nav-item{
+    color: white;
+}
+.login-button {
+    font-weight: 500;
+    background-color: #009970;
+    color: #fff;
+    font-size: 22px;
+    padding: 8px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: 0.3s background-color;
+}
+
+.login-button:hover {
+    background-color: #00b383;
+}
+#hero-section{
+     background-image: linear-gradient(to right,#a517ba,#5f1178);
+     
+     color: white;
+     padding-top:5%;
+}
+.Votingbtn{
+    padding: 12px 24px;
+    background: linear-gradient(to right,#a517ba,#5f1178);
+    color: white;
+    border-radius: 6px;
+    border:2px white solid;
+    transition: transform 250ms,ease-in-out;
+    margin-left: auto;
+}
+.Votingbtn:hover{
+    transform: scale(1.1);
+}
+.Votingbtn:active{
+    transform: scale(0.9);
+}
+.bannerH1{
+    font-size: 40px;
+    font-weight: 600;
+    margin-top: 100px;
+}
+.Imer{
+    padding-left: 10%;
+    
+    
+}
+.about{
+    background-image: linear-gradient(to right,#a517ba,#5f1178);
+    
+}
+.contact-form-home{
+    border:2px #a517ba solid;
+    padding: 20px;
+    border-radius: 15px;
+   
+    
+}
+.SubmitBtn{
+    padding: 12px 24px;
+    background: linear-gradient(to right,#a517ba,#5f1178);
+    color: white;
+    border-radius: 6px;
+    border:2px white solid;
+    transition: transform 250ms,ease-in-out;
+    margin-left: auto;
+}
+
+.footer_social_ul li{
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 10px;
+    color:#a517ba;
+    font-weight: bold;
+        
+    
+}
+
+.btn-special{
+    padding: 12px 24px;
+    background-color: white;
+    color:hsl(243,80%,62%);
+    border-radius: 6px;
+    border:2px hsl(243,80%,62%) solid; 
+    transition: transform 250ms ease-in-out;
+}
+.btn-special:hover{
+    transform: scale(1.10);
+}
+.btn-special:active{
+    transform: scale(0.9);
+}
+
+.LoginAndSignup{
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    font-family: 'Jost', sans-serif;
+    background: linear-gradient(to bottom,#fff,#eee);
+}
+.main{
+    
+    width: 350px;
+    height: 500px;
+    background:#009970;
+    overflow: hidden;
+    background: #5f1178  center/cover;
+    transform: translate(-50%,-50%);
+    border-radius:10px;
+    box-shadow: 5px 10px 50px 50px rgba(252,5,5,0.699);
+    animation: animateBg 5s linear infinite;
+}
+#chk{
+    display: none;
+}
+.singup{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.LebalSignup{
+    color: #fff;
+    font-size: 2.3em;
+    justify-content: center;
+    display: flex;
+    margin: 60px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .5s ease-in-out;
+}
+.InputSingup{
+    width: 60%;
+    height: 20%;
+    background: #fff;
+    justify-content: center;
+    display: flex;
+    margin: 20px auto;
+    padding: 10px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+.BtnSL{
+    width: 60%;
+    height: 40px;
+    background: #573b8a;
+    justify-content: center;
+    display: block;
+    margin: 10px auto;
+    color: #fff;
+    font-size: 1em;
+    font-weight: bold;
+    margin-top: 20px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    transition: .10s ease-in;
+    cursor: pointer;
+
+}
+.BtnSL:hover{
+    background:#6d44b8; 
+}
+.login{
+    height: 460px;
+    background: #eee;
+    border-radius: 60% / 10%;
+    transform: translateY(-180px);
+    transition: .8s ease-in-out;
+}
+.LebalLogin{
+    color: #6d44b8;
+    transform: scale(.8);
+}
+#chk:checked ~ .login{
+    transform: translateY(-500px);
+    
+}
+#chk:checked ~ .LebalLogin{
+    transform: scale(1);
+}
+#chk:checked ~ .LebalSignup{
+    transform: scale(.8);
+}
+.LebalLogin{
+    color: #6d44b8;
+    font-size: 2.3em;
+    justify-content: center;
+    display: flex;
+    margin: 60px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .5s ease-in-out;
+}
